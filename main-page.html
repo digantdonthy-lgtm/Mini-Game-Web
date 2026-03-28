@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Mini Game Hub</title>
+</head>
+<body>
+<h1 class="Title">Mini Game Hub </h1>
+<p class="Subtitle">Play! Complete! Have Fun!</p>
+<div class="menu">
+    <button onclick="goToGame('tictactoe.html')">❌⭕ Tic Tac Toe</button>
+    <button onclick="goToGame('memory.html')">🧠 Memory Game</button>
+    <button onclick="goToGame('reaction.html')">⚡ Reaction Timer</button>
+    <button onclick="goToGame('guessing.html')">🔢 Number Guessing</button>
+</div>
+<script src="script.js"></script>
+<style>
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+.Title{
+    margin-top:50px;
+    font-size:3rem;
+    text-shadow: 0 0 10px #00f7ff;
+}
+
+.Subtitle{
+    margin-bottom:30px;
+    color: #ccc;
+}
+.menu{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+  width: 250px;
+  padding: 15px;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #1f4068;
+  color: white;
+  transition: 0.3s;
+}
+button:hover{
+    background: #00adb5;
+    transform: scale(1.05);
+}
+</style>
+<script>
+function goToGame(page){
+    window.location.href="games/"+page;
+}
+</script>
+</body>
+</html>
