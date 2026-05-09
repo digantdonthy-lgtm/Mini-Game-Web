@@ -11,4 +11,5 @@ Games Included-
 3] Number Guessing game
 4] Reaction time game
 
+Usage of AI- AI is used for debugging syntax errors and for styling purpose.
 
